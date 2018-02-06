@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+    <form action="/user/signin" method="POST">
+        <input type="text" name="petname" required 
+        pattern="[0-9a-zA-Z\04e00-\u9fa5]{2,16}" placeholder="请输入用户名">
+        <br>
+        <input type="password" name="password" pattern="{2,16}" required placeholder="请输入密码">
+        <br>
+        <input type="submit" value="登录">
+        <input type="button" value="注册新用户" onclick="location.href='register.html'">
+    </form>
+        <script src="js/jquery.js"></script>
+        <script src="js/signin.js"></script>
+
+</body>
+</html>

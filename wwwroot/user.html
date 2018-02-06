@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传头像</title>
+</head>
+<body>
+    <!--
+        enctype:encodetype的缩写，指的是编码类型
+        该属性规定了在发送到服务器之前应该如何对表单数据进行编码
+        把它设置为enctype="multipart/form-data，才能完成完整的数据传递-->
+        
+    <form action="/user/photo" method="POST" enctype="multipart/form-data">
+    <!--accept属性表示接收的文件类型-->
+        <input type="file" name="photo" accept=".jpg,.png,.bmp">
+        <input type="submit" value="上传">
+    </form>
+</body>
+</html>

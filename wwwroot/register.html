@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+    <form action="/user/register" method="POST">
+        <input type="text" name="petname" required placeholder="请输入昵称"
+        pattern="[0-9a-zA-Z\04e00-\u9fa5]{2,16}"><br>
+        <input type="password" name="password" required placeholder="请输入密码"
+        pattern="[0-9a-zA-Z\04e00-\u9fa5]{2,16}"><br>
+        <input type="password"  required placeholder="请再次输入密码"
+        pattern="[0-9a-zA-Z\04e00-\u9fa5]{2,16}"><br>
+        <input type="radio" value="false" name="isMale" id="male" checked>
+        <label for="male">男士</label>
+        <input type="radio" value="true" name="isMale" id="female">
+        <label for="female">女士</label>
+        <br>
+        <input type="email" name="email" placeholder="请输入邮箱" required>
+        <br>
+        <select name="course" id="course">
+            <option value="HTML5">HTML5</option>
+            <option value="CSS3">CSS3</option>
+            <option value="PHP">PHP</option>
+            <option value="JS">JS</option>
+        </select>
+        <br>
+        <input type="submit" value="提交">
+        <script src="js/jquery.js"></script>
+        <script src="js/register.js"></script>
+    </form>
+</body>
+</html>
